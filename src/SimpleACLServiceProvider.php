@@ -11,7 +11,7 @@ class SimpleACLServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom( __DIR__ . '/../config.php', 'simple-acl' );
+        $this->mergeConfigFrom( __DIR__ . '/config.php', 'simple-acl' );
         $this->setDatabaseConnection();
     }
 
@@ -21,7 +21,7 @@ class SimpleACLServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $configPath = $this->app[ 'path.config' ] . DIRECTORY_SEPARATOR . 'simple-acl.php';
-        $this->publishes( [ __DIR__ . '/../config.php' => $configPath ] );
+        $this->publishes( [ __DIR__ . '/config.php' => $configPath ] );
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
