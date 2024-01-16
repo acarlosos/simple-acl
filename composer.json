@@ -1,0 +1,30 @@
+{
+    "name": "acarlosos/simple-acl",
+    "description": "Laravel Simple ACL",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "acarlosos\\SimpleAcl\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonio Carlos",
+            "email": "acarlos.os@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "illuminate/support": "^10.41"
+    },
+    "extra" : {
+        "laravel": {
+            "providers" : [
+                "acarlosos\\SimpleAcl\\SimpleACLServiceProvider"
+            ]
+        }
+    }
+}
+
+
